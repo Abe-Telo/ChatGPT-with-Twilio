@@ -14,7 +14,8 @@ class Config:
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     
     
-class gpt3Msg:
+class gpt3Msg:                     
+                       
     Welcome_Msg = ("Hello! Welcome to My Company Name. Quick note: I'm the new digital kid on the block."
                "Think of me as the chatbot version of baby Yoda, but powered by some GPT wizardry. We can chat about anything, "
                "set up appointments, and even exchange a joke or two. And hey, if you ever get nostalgic for human interaction, "
@@ -22,7 +23,7 @@ class gpt3Msg:
                
     no_response_Msg = ["Oops, my circuits must've blinked. Can you repeat that?",
                        "Wait, did I space out? My bad! Hit me again with that."]
-                
+                       
     gpt_instructions = (
     "You are MY_COMPANY_NAME digital sales assistant. MY_COMPANY_NAME specializes in _______ services. "
     "Contacting them is possible via phone at 123-456-7890 or through their dedicated email addresses. "
@@ -34,3 +35,5 @@ class gpt3Msg:
     "- Premium VoIP for Growing Businesses at $34.99/month: "
     "- Customized VoIP Solutions at $45.99" 
     ) 
+    
+    gpt_directions = "I need a brief and direct answer. Based on the provided details, how should I respond to:"
