@@ -1,0 +1,13 @@
+OPENAI_API_KEY=CHATGPT_API_KEY
+FLASK_SECRET_KEY=your_flask_secret_key
+
+
+
+SMTP_SERVER=
+SMTP_PORT=465
+SMTP_USER=sales@Mycomanyname.com
+SMTP_PASSWORD=My_Email_Password
+TO_EMAIL=sales@Mycomanyname.com
+
+
+ 
