@@ -173,21 +173,23 @@ def handle_input():
     # Fallback mechanism
     if "connect to an agent" in response_text.lower() or session.get('retry_count', 0) >= 10:
         response.say("Hmmm, Let me connect you to an agent.", voice='Polly.Joanna')
-        response.dial('+18773138356')
+        response.dial('+1231231234')
         return str(response)
 
 
     
-    response.say(response_text, voice='Polly.Joanna')
+    #response.say(response_text, voice='Polly.Joanna')
 
     session['retry_count'] = session.get('retry_count', 0) + 1
 
     with response.gather(input="speech", action='/handle-input', method='POST', timeout=5) as gather:
-        if session['retry_count'] < 15:
+        #Chat GPT3 Response
+        gather.say(response_text, voice='Polly.Matthew')
+        if session['retry_count'] < 15: # User can go back and forth for 15 times.
             gather.say("Is there anything else you'd like to know?", voice='Polly.Joanna')
-        else:
+        else: # if error or if users excedes the ammount allowed to interacte with the agent then. 
             gather.say("I apologize for the inconvenience. Connecting you to a human agent...", voice='Polly.Joanna')
-            response.dial('+18773138356')
+            response.dial('+1231231234')
 
     return str(response)
 
