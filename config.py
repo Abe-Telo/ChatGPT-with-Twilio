@@ -22,11 +22,6 @@ class gpt3Msg:
                
     no_response_Msg = ["Oops, my circuits must've blinked. Can you repeat that?",
                        "Wait, did I space out? My bad! Hit me again with that."]
-  
-    Welcome_Msg = ("Hello! Welcome to My Company Name. Quick note: I'm the new digital kid on the block."
-               "Think of me as the chatbot version of baby Yoda, but powered by some GPT wizardry. We can chat about anything, "
-               "set up appointments, and even exchange a joke or two. And hey, if you ever get nostalgic for human interaction, "
-               "just say the word and I'll connect you to an actual human. So, what fun task can I assist with today?")
                 
     gpt_instructions = (
     "You are MY_COMPANY_NAME digital sales assistant. MY_COMPANY_NAME specializes in _______ services. "
